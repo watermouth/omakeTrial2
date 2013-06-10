@@ -3,7 +3,8 @@ FILES[] =
   ringo
   georgeringo
 
-LDFLAGS_DLL += -fPIC
+#LDFLAGS_DLL += -fPIC
+CXXFLAGS += -fPIC
 
 .DEFAULT: $(DynamicCXXLibrary libgeorgeringo, $(FILES))
 
