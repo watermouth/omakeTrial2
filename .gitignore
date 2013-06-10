@@ -1,0 +1,9 @@
+*.omc
+*.swp
+*omakedb*
+*.o
+*.so
+*.dylib
+*.a
+*.DS_Store*
+

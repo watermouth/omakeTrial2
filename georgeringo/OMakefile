@@ -1,0 +1,9 @@
+FILES[] =
+  george
+  ringo
+  georgeringo
+
+LDFLAGS_DLL += -fPIC
+
+.DEFAULT: $(DynamicCXXLibrary libgeorgeringo, $(FILES))
+

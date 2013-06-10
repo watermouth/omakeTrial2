@@ -1,0 +1,11 @@
+.PHONY: clean lib all 
+clean:
+ rm -rf $(filter-proper-targets $(ls R, .))
+
+EXT_DLL = .dylib
+
+.SUBDIRS: ./johnpaul ./georgeringo ./hellobeatles
+
+all: ./johnpaul/libjohnpaul.a ./georgeringo/libgeorgeringo.dylib
+
+

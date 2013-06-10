@@ -1,0 +1,8 @@
+FILES[] =
+  john
+  paul
+  johnpaul
+
+.DEFAULT: $(StaticCXXLibrary libjohnpaul, $(FILES))
+ 
+

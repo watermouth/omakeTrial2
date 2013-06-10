@@ -1,0 +1,11 @@
+%.o: %.cpp %.hpp
+ CXXProgram($@, $*.cpp $*.hpp)
+ 
+FILES[] =
+  john
+  paul
+  johnpaul
+
+.DEFAULT: StaticCXXLibrary(libjohnpaul, $(FILES) )
+ 
+

@@ -1,0 +1,12 @@
+MAIN = hellobeatles
+LIBS = ../johnpaul/libjohnpaul
+INCLUDES = ../
+#LDFLAGS = ../georgeringo/libgeorgeringo.dylib
+LDFLAGS = -L../georgeringo -lgeorgeringo
+
+FILES[] =
+  $(MAIN)
+
+#$(MAIN): ../georgeringo/libgeorgeringo.dylib
+
+.DEFAULT: $(CXXProgram $(MAIN), $(FILES))
